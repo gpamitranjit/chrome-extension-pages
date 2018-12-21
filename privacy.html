@@ -10,13 +10,48 @@
             .subParagraphMargin {
                 margin-left: 5%;
             }
+            ul.a {
+                 list-style-position: outside;
+            }
+            div.copyrightInformationFooter {
+                position: fixed;
+                bottom: 0;
+                text-align: center;
+                color: black;
+                background: white;
+                display: block;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         <h1 class="underline">Toggle tabs | Search tab | Minimize/Maximize chrome-windows | Duplicate and split tabs, toggle window-sizes</h1>
-        <h3>Privacy policy for using this chrome-extension:-</h3>
-        <p class="subParagraphMargin">We don't collect any information from your chrome-browsing!</p>
-        <p class="subParagraphMargin">we only store tabs title and tabs minimal information which doesn't contains any sensitive information that you may have visited on a website in your local-computer for better experience.</p>
-        <p class="subParagraphMargin">No-copy of this software shall be reproduced without the written concent of the Author.</p>
+        <h3>Privacy policy:-</h3>
+        <h3>What information do we collect?</h3>
+        <ul>
+            <li>Google oauth token from google API to perform the request with the license server for checking the validity of the user license via google's secure client side API</li>
+            <li>We store only tab title, URL other minimal tab state that chrome provides as part of 'Tab' object which don't contain any website sensitive information that you visit.</li>
+            <li>Here sensitive information means the data that compromise your websites account that you visit.</li>
+            <li>No data is collected from your computer on to our personal / business servers neither for analysis nor for sharing with third party!</li>
+            <li>All the collected minimal data for extension's smooth funcationality will be stored locally within your computer which don't contain any sensitive information.</li>
+            <li>For 'Search web pages' funcationality of this extension, we search the web pages of all the chrome tabs that you open in chrome except for the prohibited chrome URLs as mentioned later in this document.</li>
+            <li>Again for 'Search web pages' funcationality we only search the users' open tabs (either active / inactive chrome tabs) and collect only the number of occurences of that search keyword in all the opened tabs and store it locally.</li>
+        </ul>
+
+        <h3>How do you we use the user information?</h3>
+        <ul>
+            <li>We use the user information (chrome Tab object & number of occurences of that searched keyword) to provide user with best experiences</li>
+            <li>We store user settings of this extension on chrome sync storage so as to sync on all the logged-in chrome browser</li>
+            <li>We alsos store the license data on chrome sync storage for getting it synched on all the logged-in chrome browser</li>
+            <li>The users' oauth token will be used only for chekcing license validity and for checing the users purchased items from the chrome web store so that we could confirm if the user has purchased the item or not</li>
+        </ul>
+        <h3>What information do you share?</h3>
+        <ul>
+            <li>We don't share any information with third-party other than with Google API for performing user license validity.</li>
+        </ul>
+
+        <div class="copyrightInformationFooter">
+                &#169; All right reserved by Amit Patil(gpamitranjit@gmail.com)
+        </div>
     </body>
 </html>
