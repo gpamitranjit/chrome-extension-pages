@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            privacy- Toggle tabs | Search tab | Minimize/Maximize chrome-windows | Duplicate and split tabs
+        </title>
+        <link rel="icon" href="images/icon16.png" type="image/png" sizes="16x16"/>
+        <link rel="stylesheet" type="text/css" href="common-page-layout.css">
+        <style>
+            .underline {
+                text-decoration: underline;
+            }
+            .subParagraphMargin {
+                margin-left: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" class="logo"><img src="images/logo.png"/></a>
+            <a>Toggle | Search | Duplicate & Split tab,window | Minimize/Maximize</a>
+            <div class="header-right">
+              <a href="index.html" >Home</a>
+              <a href="privacy.html" class="active">Privacy</a>
+              <a href="termsOfServices.html">Terms of services</a>
+            </div>
+          </div>
+    <div class="body">
+        <h3>Privacy policy:-</h3>
+        <h3>What information do we collect?</h3>
+        <ul>
+            <li>Google oauth token from google API to perform the request with the license server for checking the validity of the user license via google's secure client side API</li>
+            <li>We store only tab title, URL other minimal tab state that chrome provides as part of 'Tab' object which don't contain any website sensitive information that you visit.</li>
+            <li>Here sensitive information means the data that compromise your websites account that you visit.</li>
+            <li>No data is collected from your computer on to our personal / business servers neither for analysis nor for sharing with third party!</li>
+            <li>All the collected minimal data for extension's smooth funcationality will be stored locally within your computer which don't contain any sensitive information.</li>
+            <li>All the collected minimal user-data will be wiped-out on closing the browser, except for the settings which will be persisted even after the closing of the browser</li>
+            <li>For 'Search web pages' funcationality of this extension, we search the web pages of all the chrome tabs that you open in chrome except for the prohibited chrome URLs as mentioned later in this document.</li>
+            <li>Again for 'Search web pages' funcationality we only search the users' open tabs (either active / inactive chrome tabs) and collect only the number of occurences of that search keyword in all the opened tabs and store it locally.</li>
+        </ul>
+
+        <h3>How do we use the user information?</h3>
+        <ul>
+            <li>We use the user information (chrome Tab object & number of occurences of that searched keyword) to provide user with best experiences</li>
+            <li>We store user settings of this extension on chrome sync storage so as to sync on all the logged-in chrome browser</li>
+            <li>We also store the license data on chrome sync storage for getting it synched on all the logged-in chrome browser</li>
+            <li>The users' oauth token will be used only for chekcing license validity and for checing the users purchased items from the chrome web store so that we could confirm if the user has purchased the item or not</li>
+        </ul>
+        <h3>What information do we share?</h3>
+        <ul>
+            <li>We don't share any information with third-party other than with Google API for performing smooth operation of this software</li>
+        </ul>
+
+        <h3>Prohibited URLs for 'Search web pages' feature</h3>
+        <ul>
+            <li>URLs that has below patterns
+                <ul>
+                    <li>http?://.+.google.com</li>
+                    <li>http?://.+.google.co.in</li>
+                    <li>chrome://.+</li>
+                    <li>view-source:https://.+</li>
+                    <li>view-source:http://.+</li>
+                    <li>chrome-extension://.+</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Semantics of the special characters in the above given URL patterns</h3>
+        <ul>
+            <li>.+ means one or more characters</li>
+            <li>? means one or zero characters</li>
+        </ul>
+        <p><b>NOTE:</b> Why we have prohibited the above mentioned URL patterns?</p>
+        <ul>
+            Below are the few of the reason of listing these URL patterns as prohibited,
+            <li>Chrome browser security policy don't allow chrome-extension software to access the some of the aforementioned URL patterns.</li>
+            <li>Enabling the "Search web pages" feature on the source pages does't make any sence as the data remains same on original web page  and on the source page.</li>
+        </ul>
+    </div>
+        <div class="copyrightInformationFooter">
+                &#169; All right reserved by Amit Patil(gpamitranjit@gmail.com)
+        </div>
+    </body>
+</html>
