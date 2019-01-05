@@ -87,3 +87,18 @@ float: right;
 .item-marker-none {
   list-style-type: none;
 }
+
+.bold {
+  font-weight:bold;
+}
+
+.background {
+  background-color: rgb(190, 189, 189);
+  margin-right: 40%;
+  color: white;
+  margin-top: 5%;
+  border-radius: 10px;
+  padding-left: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
