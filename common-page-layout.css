@@ -82,3 +82,8 @@ float: right;
   float: none;
 }
 }
+
+
+.item-marker-none {
+  list-style-type: none;
+}
